@@ -94,7 +94,7 @@ def ResNet_50(input_shape=None, input_tensor=None):
 
 
 if __name__ == '__main__':
-    jpg = '/home/pgr/Desktop/cat.jpg'
+    jpg = 'test/cat.jpg'
 
     img = image.load_img(jpg, target_size=(224,224))
     x = image.img_to_array(img)
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     x = preprocess_input(x)
 
     resnet_50 = ResNet_50()
-    resnet_50.load_weights('/home/pgr/workspace/keras_tutorial/20_07_2019.h5')
+    resnet_50.load_weights('model/20_07_2019.h5')
 
     print('Input image shape:', x.shape)
 
