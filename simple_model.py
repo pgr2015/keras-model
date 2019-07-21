@@ -102,7 +102,7 @@ if __name__ == '__main__':
     x = preprocess_input(x)
 
     resnet_50 = ResNet_50()
-    resnet_50.load_weights('model/20_07_2019.h5')
+    resnet_50.load_weights('models/ResNet-50.h5')
 
     print('Input image shape:', x.shape)
 
